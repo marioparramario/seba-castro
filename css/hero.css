@@ -1,0 +1,158 @@
+.loading .hero-container {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.loading .hero-container-listen {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.loading .hero-container h1 {
+  opacity: 0;
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url('../images/landing/cream-background.jpg');
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hero-container {
+  padding: 1.5em 3.4em;
+  background-color: white;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+  -moz-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+  -ms-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+  -o-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+  transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+}
+.hero-container-listen {
+  padding: 1.5em 3em;
+  background-color: #3E1C7A;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  -moz-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  -ms-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  -o-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+.hero-container-listen .logo-listen {
+  width: 7.5em;
+}
+.hero-container-listen h1:last-child {
+  transition-delay: 0.7s;
+}
+.hero-container-listen a:nth-of-type(1) {
+  margin-right: 2em;
+}
+.hero-forastero {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #513BB4;
+  font-size: 4em;
+  text-align: center;
+}
+.hero-seba {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #FD99BB;
+  font-size: 2.4em;
+  line-height: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+.hero-headline-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 10vh;
+  z-index: 1;
+}
+.hero-container h1,
+.hero-container-listen a {
+  opacity: 1;
+  -webkit-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  -moz-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  -ms-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  -o-transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+.character {
+  width: 85%;
+  height: 100%;
+  background-image: url('../images/landing/character-2.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+  -moz-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+  -ms-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+  -o-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+  transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+@media (max-width: 991px) {
+  .character {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .hero-forastero {
+    font-size: 3.7em;
+  }
+  .hero-seba {
+    font-size: 2.2em;
+  }
+}
+@media (max-width: 479px) {
+  .hero {
+    -webkit-box-pack: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+  }
+  .hero-container {
+    padding: 1.1em 3em;
+  }
+  .hero-container-listen {
+    padding: 1.1em 2.2em;
+  }
+  .hero-container-listen .logo-listen {
+    width: 7em;
+  }
+  .hero-container-listen a:nth-of-type(1) {
+    margin-right: 1.2em;
+  }
+  .hero-forastero {
+    font-size: 3.2em;
+  }
+  .hero-seba {
+    font-size: 1.95em;
+  }
+  .hero-headline-wrapper {
+    bottom: 40px;
+  }
+  .character {
+    height: 90vh;
+    background-position: 65% 50%;
+  }
+}

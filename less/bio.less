@@ -1,0 +1,159 @@
+@import "variables.less";
+
+.bio {
+  overflow: hidden;
+  min-height: 150vh;
+  background-color: @dark-purple;
+  .headline {
+    margin-left: 0;
+    &::before,
+    ::after   {
+      content: none;
+    }
+  }
+  &-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &-text {
+    &-container {
+      position: relative;
+      z-index: 3;
+      margin-bottom: 60vh;
+      margin: 10% 0 10% 20%;
+    }
+    &-1 {
+      display: block;
+      width: 85%;
+      max-width: 800px;
+      margin-bottom: 30px;
+      color: white;
+      font-size: 1.6em;
+      line-height: 1.3em;
+      font-weight: 400;
+    }
+    &-2 {
+      display: block;
+      width: 70%;
+      max-width: 720px;
+      margin-bottom: 30px;
+      color: white;
+      font-size: 1.3em;
+      line-height: 1.3em;
+      font-weight: 300;
+    }
+  }
+  &-image {
+    position: absolute;
+    left: 0vw;
+    top: 40vh;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    opacity: 1;
+  }
+  &-red {
+    position: absolute;
+    top: 60vh;
+    right: 20%;
+    z-index: 1;
+    display: block;
+    width: 40%;
+    height: 80%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    background: @red;
+  }
+  &-text-1,
+  &-text-2,
+  .headline {
+    opacity: 0;
+    .transition-properties(all 2s cubic-bezier(.19,1,.22,1););
+  }
+  &-text-1.active,
+  &-text-2.active,
+  .headline.active {
+    opacity: 1;
+  }
+}
+@media (max-width: @max-screen) {
+  .bio-text-container {
+    margin-left: 20%;
+  }
+}
+@media (max-width: @tablet) {
+  .bio {
+    min-height: auto;
+    &-text {
+      &-container {
+        margin-left: 0;
+        padding-right: 0;
+        padding: 0 10%;
+      }
+      &-1 {
+        font-size: 1.5em;
+      }
+      &-2 {
+        font-size: 1.2em;
+      }
+      &-1,
+      &-2 {
+        width: 100%;
+        max-width: none;
+      }
+    }
+    &-image {
+      width: 60%;
+    }
+    &-red {
+      right: 8%;
+      width: 50%;
+    }
+  }
+}
+@media (max-width: @small-tablet) {
+  .bio {
+    &-text {
+      &-1 {
+        font-size: 1.3em;
+        line-height: 1.2em;
+      }
+      &-2 {
+        font-size: 1.1em;
+        line-height: 1.2em;
+      }
+    }
+    &-image {
+    width: 70%;
+    top: 20vh;
+    }
+    &-red {
+      top: 40vh;
+      height: 70%;
+    }
+  }
+}
+
+@media (max-width: @phone) {
+  .bio {
+    &-red,
+    &-image {
+      display: none;
+    }
+    &-text {
+      &-container {
+        padding: 0 5%;
+      }
+      &-1 {
+        font-size: 1.1em;
+      }
+    }
+    .headline {
+      margin-bottom: 2rem;
+    }
+  }
+}

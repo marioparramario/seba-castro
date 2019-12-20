@@ -1,0 +1,196 @@
+.navbar {
+  height: 70px;
+  background: #513BB4;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+  -webkit-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.navbar-wrapper {
+  position: fixed;
+  left: -110vh;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 9998;
+  display: block;
+  width: 100vh;
+  height: 100%;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  left: calc(-100vh - 70px);
+  display: block !important;
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.navbar-close {
+  position: absolute;
+  top: 50px;
+  right: -70px;
+  padding: 9px 20px;
+  padding-right: 1rem;
+  background: white;
+  color: #513BB4;
+  -webkit-transform: rotate(-90deg) translateY(0);
+  -moz-transform: rotate(-90deg) translateY(0);
+  -ms-transform: rotate(-90deg) translateY(0);
+  -o-transform: rotate(-90deg) translateY(0);
+  transform: rotate(-90deg) translateY(0);
+  -webkit-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.navbar-container {
+  width: 90%;
+  height: 100%;
+}
+.navbar-item {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 400;
+  z-index: 1;
+}
+.navbar-item.w--current {
+  color: white;
+}
+.navbar-item.w--current::before,
+.navbar-item:hover::before {
+  width: 80%;
+}
+.navbar-item::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: calc(50% - 3px);
+  width: 0;
+  height: 3px;
+  background: #FD99BB;
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu-text {
+  font-size: 1.2em;
+  margin-right: 1.5em;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu-text.close {
+  position: absolute;
+}
+.menu-text-container {
+  position: relative;
+  overflow: hidden;
+}
+.menu-lines {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.menu-lines::before,
+.menu-lines::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  left: 4px;
+  background: #513BB4;
+  will-change: transform, rotate;
+  -webkit-transform-origin: 300% 50%;
+  -ms-transform-origin: 300% 50%;
+  transform-origin: 300% 50%;
+  -webkit-transform: rotateZ(0) translateX(0);
+  -moz-transform: rotateZ(0) translateX(0);
+  -ms-transform: rotateZ(0) translateX(0);
+  -o-transform: rotateZ(0) translateX(0);
+  transform: rotateZ(0) translateX(0);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu-lines::after {
+  left: auto;
+  right: 4px;
+  -webkit-transform-origin: -200% 50%;
+  -ms-transform-origin: -200% 50%;
+  transform-origin: -200% 50%;
+  -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu-open .navbar-wrapper {
+  -webkit-transform: translateX(70px);
+  -moz-transform: translateX(70px);
+  -ms-transform: translateX(70px);
+  -o-transform: translateX(70px);
+  transform: translateX(70px);
+}
+.menu-open .navbar-close {
+  background: #0F2345;
+  color: white;
+}
+.menu-open .menu-text {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.menu-open .menu-lines::before {
+  background: white;
+  -webkit-transform: rotateZ(45deg) translateX(5px);
+  -moz-transform: rotateZ(45deg) translateX(5px);
+  -ms-transform: rotateZ(45deg) translateX(5px);
+  -o-transform: rotateZ(45deg) translateX(5px);
+  transform: rotateZ(45deg) translateX(5px);
+}
+.menu-open .menu-lines::after {
+  background: white;
+  -webkit-transform: rotateZ(-45deg) translateX(-5px);
+  -moz-transform: rotateZ(-45deg) translateX(-5px);
+  -ms-transform: rotateZ(-45deg) translateX(-5px);
+  -o-transform: rotateZ(-45deg) translateX(-5px);
+  transform: rotateZ(-45deg) translateX(-5px);
+}
+.overlay-open .navbar-close {
+  transform: rotate(-90deg) translateY(-100%);
+}
+.loading .navbar-close {
+  transform: rotate(-90deg) translateY(-100%);
+}
+@media (max-width: 479px) {
+  .navbar-close {
+    top: 40px;
+  }
+}

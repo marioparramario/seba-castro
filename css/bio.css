@@ -1,0 +1,148 @@
+.bio {
+  overflow: hidden;
+  min-height: 150vh;
+  background-color: #3E1C7A;
+}
+.bio .headline {
+  margin-left: 0;
+}
+.bio .headline::before,
+.bio .headline ::after {
+  content: none;
+}
+.bio-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bio-text-container {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 60vh;
+  margin: 10% 0 10% 20%;
+}
+.bio-text-1 {
+  display: block;
+  width: 85%;
+  max-width: 800px;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 1.6em;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+.bio-text-2 {
+  display: block;
+  width: 70%;
+  max-width: 720px;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+.bio-image {
+  position: absolute;
+  left: 0vw;
+  top: 40vh;
+  z-index: 2;
+  display: block;
+  width: 50%;
+  opacity: 1;
+}
+.bio-red {
+  position: absolute;
+  top: 60vh;
+  right: 20%;
+  z-index: 1;
+  display: block;
+  width: 40%;
+  height: 80%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background: #C02B6E;
+}
+.bio-text-1,
+.bio-text-2,
+.bio .headline {
+  opacity: 0;
+  -webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.bio-text-1.active,
+.bio-text-2.active,
+.bio .headline.active {
+  opacity: 1;
+}
+@media (max-width: 1280px) {
+  .bio-text-container {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 991px) {
+  .bio {
+    min-height: auto;
+  }
+  .bio-text-container {
+    margin-left: 0;
+    padding-right: 0;
+    padding: 0 10%;
+  }
+  .bio-text-1 {
+    font-size: 1.5em;
+  }
+  .bio-text-2 {
+    font-size: 1.2em;
+  }
+  .bio-text-1,
+  .bio-text-2 {
+    width: 100%;
+    max-width: none;
+  }
+  .bio-image {
+    width: 60%;
+  }
+  .bio-red {
+    right: 8%;
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .bio-text-1 {
+    font-size: 1.3em;
+    line-height: 1.2em;
+  }
+  .bio-text-2 {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+  .bio-image {
+    width: 70%;
+    top: 20vh;
+  }
+  .bio-red {
+    top: 40vh;
+    height: 70%;
+  }
+}
+@media (max-width: 479px) {
+  .bio-red,
+  .bio-image {
+    display: none;
+  }
+  .bio-text-container {
+    padding: 0 5%;
+  }
+  .bio-text-1 {
+    font-size: 1.1em;
+  }
+  .bio .headline {
+    margin-bottom: 2rem;
+  }
+}
