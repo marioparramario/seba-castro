@@ -1,6 +1,6 @@
 .music {
   position: relative;
-  background-color: #0F2345;
+  background-color: #212121;
 }
 .music .headline::before {
   background: #C02B6E;
@@ -9,6 +9,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  margin: 100px 0;
 }
 .discography-leader .square {
   position: absolute;
@@ -26,18 +27,18 @@
   right: auto;
   width: 44%;
   height: 55vh;
-  background-color: #513BB4;
+  background-color: #212121 ;
 }
 .discography-side {
   position: relative;
   z-index: 0;
-  width: 50%;
+  /* width: 50%;
   height: 100%;
-  padding: 18vh 0px 20vh;
+  padding: 18vh 0px 20vh; */
 }
-.discography-side.left {
+/* .discography-side.left {
   padding-right: 10%;
-}
+} */
 .discography-side-link {
   position: relative;
   margin: 15px 30px;
@@ -64,6 +65,9 @@
 }
 .discography-side-image.vieja {
   background-image: url('../assets/images/leader/vieja-escuela-square.jpg');
+}
+.discography-side-image.faraway {
+  background-image: url('../assets/images/leader/far-away.jpg');
 }
 .discography-side-image::after {
   content: 'More information';
@@ -103,7 +107,7 @@
   top: 0;
   bottom: 0;
   left: 19px;
-  background: #513BB4;
+  background: #212121 ;
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -126,7 +130,7 @@
   top: 19px;
   left: 0;
   right: 0;
-  background: #513BB4;
+  background: #212121 ;
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -195,6 +199,7 @@
 .info-album-column img {
   width: 100%;
   margin-bottom: 50px;
+
 }
 .info-album-text-container {
   margin-top: 30px;
@@ -239,8 +244,9 @@
   text-decoration: none;
 }
 .portrait-image {
-  width: 60px;
+  width: 60px !important;
   margin-right: 20px;
+  margin-bottom: 0 !important;
   float: none;
 }
 .portrait-text-container {

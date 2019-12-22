@@ -1,6 +1,6 @@
 .navbar {
   height: 70px;
-  background: #513BB4;
+  background: #212121 ;
   -webkit-perspective-origin: 0% 50%;
   perspective-origin: 0% 50%;
   -webkit-transform-origin: 100% 0%;
@@ -42,7 +42,7 @@
   padding: 9px 20px;
   padding-right: 1rem;
   background: white;
-  color: #513BB4;
+  color: #212121 ;
   -webkit-transform: rotate(-90deg) translateY(0);
   -moz-transform: rotate(-90deg) translateY(0);
   -ms-transform: rotate(-90deg) translateY(0);
@@ -121,7 +121,7 @@
   width: 2px;
   height: 100%;
   left: 4px;
-  background: #513BB4;
+  background: #212121 ;
   will-change: transform, rotate;
   -webkit-transform-origin: 300% 50%;
   -ms-transform-origin: 300% 50%;

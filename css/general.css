@@ -51,7 +51,7 @@ body {
   animation: loaderAnim 0.7s cubic-bezier(0.19, 1, 0.22, 1) infinite alternate forwards;
 }
 a {
-  color: #513BB4;
+  color: #212121 ;
 }
 img {
   opacity: 0;
@@ -95,7 +95,7 @@ iframe {
   color: #FD99BB;
 }
 .purple {
-  color: #513BB4;
+  color: #212121 ;
 }
 .dark-purple {
   color: #3E1C7A;
@@ -136,7 +136,7 @@ iframe {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: #0F2345;
+  background: #212121;
   pointer-events: none;
   opacity: 0;
   -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
