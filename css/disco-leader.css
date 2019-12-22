@@ -57,13 +57,13 @@
   max-width: 450px;
   height: 35vw;
   max-height: 450px;
-  background-image: url('../images/leader/forastero-square.jpg');
+  background-image: url('../assets/images/leader/forastero-square.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: repeat-x;
 }
 .discography-side-image.vieja {
-  background-image: url('../images/leader/vieja-escuela-square.jpg');
+  background-image: url('../assets/images/leader/vieja-escuela-square.jpg');
 }
 .discography-side-image::after {
   content: 'More information';

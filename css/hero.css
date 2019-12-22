@@ -19,7 +19,7 @@
   position: relative;
   overflow: hidden;
   height: 100vh;
-  background-image: url('../images/landing/cream-background.jpg');
+  background-image: url('../assets/images/landing/cream-background.jpg');
   background-position: 0px 0px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -98,7 +98,7 @@
 .character {
   width: 85%;
   height: 100%;
-  background-image: url('../images/landing/character-2.png');
+  background-image: url('../assets/images/landing/character-2.png');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
