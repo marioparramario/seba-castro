@@ -31,6 +31,12 @@ $( ".discography-side-link.forastero").click(function() {
 $( ".discography-close").click(function() {
   $("body").removeClass("forastero");
 });
+$( ".discography-side-link.faraway").click(function() {
+  $("body").addClass("faraway");
+});
+$( ".discography-close").click(function() {
+  $("body").removeClass("faraway");
+});
 
 $(document).ready(function() {
   var $docEl = $('html, body'),

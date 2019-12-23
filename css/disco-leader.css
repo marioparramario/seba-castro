@@ -167,7 +167,8 @@
   -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.info-album-wrapper.forastero {
+.info-album-wrapper.forastero,
+.info-album-wrapper.faraway {
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -216,6 +217,7 @@
   -o-transform: translateX(0);
   transform: translateX(0);
 }
+.vieja .info-album-wrapper.faraway,
 .vieja .info-album-wrapper.forastero {
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -223,6 +225,7 @@
   -o-transform: translateX(100%);
   transform: translateX(100%);
 }
+.faraway .info-album-wrapper.faraway,
 .forastero .info-album-wrapper.forastero {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -231,6 +234,7 @@
   transform: translateX(0);
 }
 .vieja .info-album-container,
+.faraway .info-album-container,
 .forastero .info-album-container {
   opacity: 1;
   -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
